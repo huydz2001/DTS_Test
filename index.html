@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            margin-bottom: 20px;
+        }
+        .st{
+            margin-right: 20px;
+            background-color: aqua !important;
+        }
+        .rs{
+            background-color: antiquewhite !important;
+        }
+        .boxPar{
+            display: flex;
+            align-items: center;
+        }
+        .box {
+            height: 50px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+            background-color: rgb(165, 128, 128);
+           
+        }
+        .txt{
+            margin-left: 20px;
+            max-width: 1000px;
+            overflow: auto;
+        }
+        .time{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="boxPar menu">
+        <div class="box st">Start</div>
+        <div class="box rs">Reset</div>
+    </div>
+    
+    <div class="boxPar">
+        <div class="box qs">QuickSort</div>
+        <div class="txt">
+            <span>Ket qua: </span>
+            <span class="rs_qs"></span>
+        </div>
+    </div>
+    <div class="time">
+        <span>Time: </span>
+        <span class="time_qs"></span>
+    </div>
+
+    <div class="boxPar">
+        <div class="box ms">MergeSort</div>
+        <div class="txt">
+            <span>Ket qua: </span>
+            <span class="rs_ms"></span>
+        </div>
+    </div>
+    <div class="time ">
+        <span>Time: </span>
+        <span class="time_ms"></span>
+    </div>
+
+    <div class="boxPar">
+        <div class="box ss">SelectionSort</div>
+        <div class="txt">
+            <span>Ket qua: </span>
+            <span class="rs_ss"></span>
+        </div>
+    </div>
+    <div class="time ">
+        <span>Time: </span>
+        <span class="time_ss"></span>
+    </div>
+
+    <div class="boxPar">
+        <div class="box is">InsertionSort</div>
+        <div class="txt">
+            <span>Ket qua: </span>
+            <span class="rs_is"></span>
+        </div>
+    </div>
+    <div class="time ">
+        <span>Time: </span>
+        <span class="time_is"></span>
+    </div>
+
+    <div class="boxPar">
+        <div class="box bs">BubleSort</div>
+        <div class="txt">
+            <span>Ket qua: </span>
+            <span class="rs_bs"></span>
+        </div>
+    </div>
+    <div class="time">
+        <span>Time: </span>
+        <span class="time_bs"></span>
+    </div>
+
+    <div class="box btn_ss"> So sánh</div>
+    <div>
+        <span >Thuat toan nhanh nhat: </span>
+        <span class="max"></span>
+    </div>
+    <div>
+        <span >Thuat toan cham nhat: </span>
+        <span class="min"></span>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
