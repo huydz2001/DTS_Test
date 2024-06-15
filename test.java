@@ -186,19 +186,19 @@ public class test {
 
     public static void main(String[] arg) {
         test t = new test();
-        String[] arr = t.generateStrings(5);
+        String[] arr = t.generateStrings(100);
         System.out.println("------UnSorted--------");
         t.printArray(arr);
         System.out.println("------Bubble Sort--------");
-        t.printArray(t.bubbleSort(arr));
+        t.printArray(t.bubbleSort(arr.clone()));
         System.out.println("------Selection Sort--------");
-        t.printArray(t.selectionSort(arr));
+        t.printArray(t.selectionSort(arr.clone()));
         System.out.println("------Insertion Sort--------");
-        t.printArray(t.insertionSort(arr));
+        t.printArray(t.insertionSort(arr.clone()));
         System.out.println("------Quick Sort--------");
-        t.printArray(t.quickSort(arr));
+        t.printArray(t.quickSort(arr.clone()));
         System.out.println("------Merge Sort--------");
-        t.printArray(t.mergeSort(arr));
+        t.printArray(t.mergeSort(arr.clone()));
        
     }
 }
